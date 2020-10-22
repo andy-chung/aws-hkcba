@@ -1,0 +1,22 @@
+extends layout.pug
+
+block content
+    .container
+      .row
+        .col-lg-8.col-md-10.mx-auto
+          p #{Game}
+          p 
+            | #{tourney.Game}
+            br
+            | #{tourney.Tdate.toDateString()} #{tourney.Tdate.toLocaleTimeString()}
+          p List of participants registered 
+          .table-responsive
+            table.table
+              tr
+                th Player
+                th Teammates
+              each player in player_list
+                tr
+                  td #{player.Mname} 
+                  td #{player.Description}
+            hr

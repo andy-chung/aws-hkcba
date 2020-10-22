@@ -1,0 +1,76 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title HKCBA
+    // Bootstrap core CSS
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css', integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh', crossorigin='anonymous')
+    // Custom fonts for this template
+    link(href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css', integrity='sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=', crossorigin='anonymous')
+    // Custom styles for this template
+    // link href="css/clean-blog.min.css" rel="stylesheet"
+    link(href='/stylesheets/clean-blog-page.css', rel='stylesheet')
+    link(rel='stylesheet', href='/stylesheets/minimal-table.css')
+    link(rel='icon', type='image/png', href='/favicon.png')
+  body
+    // Navigation
+    // nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav"
+    // nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top is-visible is-fixed" id="mainNav"
+    nav#mainNav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top
+      .container
+        a.navbar-brand(href='/') 
+          img.img-fluid(src='/images/logo.png')
+        button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+          | Menu
+          i.fas.fa-bars
+        #navbarResponsive.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item
+              a.nav-link(href='/calendar') Calendar
+            li.nav-item
+              a.nav-link(href='https://www.bridgewebs.com/hkcba/') Results
+            li.nav-item
+              a.nav-link(href='/newsletters') Newsletters
+            li.nav-item
+              a.nav-link(href='/members') Members
+    // Page Header
+    // Main Content
+    block content
+    // Footer
+    // footer class="footer bg-light"
+    footer.footer.bg-light
+      .container
+        .row
+          .col-lg-6.h-100.text-center.text-lg-left.my-auto
+            ul.list-inline.mb-2
+              li.list-inline-item
+                a(href='/news/about.html') About
+              li.list-inline-item ⋅
+              li.list-inline-item
+                a(href='/news/contact.html') Contact
+              li.list-inline-item ⋅
+              li.list-inline-item
+                a(href='/ranking') Ranking
+            p.text-muted.small.mb-4.mb-lg-0 © Hong Kong Contract Bridge Association 2020
+          .col-lg-6.h-100.text-center.text-lg-right.my-auto
+            ul.list-inline.mb-0
+              li.list-inline-item.mr-3
+                a(href='https://www.facebook.com/Hong-Kong-Contract-Bridge-Association-347038355399665')
+                  i.fab.fa-facebook.fa-2x.fa-fw
+                  //i.fab.fa-facebook-f.fa-2x.fa-fw
+                  //i.fas.fa-circle.fa-stack-2x
+                  //i.fab.fa-facebook-f.fa-stack-1x.fa-inverse
+    // Bootstrap core JavaScript
+    script(src='https://code.jquery.com/jquery-3.4.1.slim.min.js', integrity='sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n', crossorigin='anonymous')
+    script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js', integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo', crossorigin='anonymous')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js', integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js', integrity='sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=', crossorigin='anonymous')
+    // Custom scripts for this template
+    // script src="js/clean-blog.min.js"></script
+    script(src='/javascripts/clean-blog-page.js')
+

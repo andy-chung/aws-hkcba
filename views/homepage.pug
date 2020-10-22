@@ -1,0 +1,20 @@
+extends layouthomepage.pug
+
+block content
+    .container
+      .row
+        .col-lg-8.col-md-10.mx-auto
+          each post in post_list
+            .post-preview
+              a(href= post.Dname)
+                h2.post-title
+                  | #{post.Title}
+                h3.post-subtitle
+                  | #{post.Subtitle}
+              p.post-meta
+                | Posted by #{post.Author} on #{post.Pdate.toDateString()}
+            hr
+          // Pager
+          .clearfix
+            a.btn.btn-primary.float-right(href='/filterposts') Filter Posts →
+    hr

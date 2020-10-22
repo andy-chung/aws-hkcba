@@ -1,0 +1,114 @@
+extends layout.pug
+
+block content
+    .container
+      .row
+        .col-lg-8.col-md-10.mx-auto
+          p National Grand Master  
+          table
+            tr
+              th Rownum
+              th Player
+              th Rank
+            each ngm in ngm_list
+              tr
+                td #{ngm.Rownum} 
+                td #{ngm.MName} 
+                td #{ngm.Rank} 
+            hr
+          p Grand Master  
+          table
+            tr
+              th Rownum
+              th Player
+              th Rank
+            each gm in gm_list
+              tr
+                td #{gm.Rownum} 
+                td #{gm.MName} 
+                td #{gm.Rank} 
+            hr
+          p National Life Master  
+          table
+            tr
+              th Rownum
+              th Player
+              th Rank
+            each nlm in nlm_list
+              tr
+                td #{nlm.Rownum} 
+                td #{nlm.MName} 
+                td #{nlm.Rank} 
+            hr
+          p Life Master  
+          table
+            tr
+              th Rownum
+              th Player
+              th Rank
+            each lm in lm_list
+              tr
+                td #{lm.Rownum} 
+                td #{lm.MName} 
+                td #{lm.Rank} 
+            hr
+          p Gold Master  
+          table
+            tr
+              th Rownum
+              th Player
+              th Rank
+            each goldm in goldm_list
+              tr
+                td #{goldm.Rownum} 
+                td #{goldm.MName} 
+                td #{goldm.Rank} 
+            hr
+          p Silver Master  
+          table
+            tr
+              th Rownum
+              th Player
+              th Rank
+            each sm in sm_list
+              tr
+                td #{sm.Rownum} 
+                td #{sm.MName} 
+                td #{sm.Rank} 
+            hr
+          p Bronze Master  
+          table
+            tr
+              th Rownum
+              th Player
+              th Rank
+            each bm in bm_list
+              tr
+                td #{bm.Rownum} 
+                td #{bm.MName} 
+                td #{bm.Rank} 
+            hr
+          p Master  
+          table
+            tr
+              th Rownum
+              th Player
+              th Rank
+            each m in m_list
+              tr
+                td #{m.Rownum} 
+                td #{m.MName} 
+                td #{m.Rank} 
+            hr
+          p Non Master  
+          table
+            tr
+              th Rownum
+              th Player
+              th Rank
+            each nm in nm_list
+              tr
+                td #{nm.Rownum} 
+                td #{nm.MName} 
+                td #{nm.Rank} 
+            hr

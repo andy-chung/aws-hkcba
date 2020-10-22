@@ -1,0 +1,18 @@
+extends layout.pug
+
+block content
+    .container
+      .row
+        .col-lg-8.col-md-10.mx-auto
+          p National Grand Master  
+          table
+            tr
+              th Rownum
+              th Player
+              th Rank
+            each ngm in ngm_list
+              tr
+                td #{ngm.Rownum} 
+                td #{ngm.MName} 
+                td #{ngm.Rank} 
+            hr

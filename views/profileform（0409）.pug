@@ -1,0 +1,35 @@
+extends layoutlogin.pug
+
+block content
+    .container
+      .row
+        .col-sm-9.col-md-7.col-lg-5.mx-auto
+          .card.card-signin.my-5
+            .card-body
+              h5.card-title.text-center  #{usage}
+              form.form-signin(action='', method='post')
+                .form-label-group
+                  input#inputUsername.form-control(name='inputUsername', type='textbox', required='', value=(undefined===member? '' : member.Username))
+                  label(for='inputUsername') Username
+                .form-label-group
+                  input#inputPassword.form-control(name='inputPassword', type='password', required='', value=(undefined===member? '' : member.Password))
+                  label(for='inputPassword') Password
+                .form-label-group
+                  input#inputConfirm.form-control(name='inputConfirm', type='password', required='', value=(undefined===member? '' : member.Password))
+                  label(for='inputConfirm') Confirm password
+                .form-label-group
+                  input#inputMname.form-control(name='inputMname', type='textbox', required='', value=(undefined===member? '' : member.Mname))
+                  label(for='inputMname') Member name
+                .form-label-group
+                  input#inputEmail.form-control(name='inputEmail', type='email', required='', value=(undefined===member? '' : member.Email))
+                  label(for='inputEmail') Email
+                .form-label-group
+                  input#inputPhone.form-control(name='inputPhone', type='textbox', required='', value=(undefined===member? '' : member.Phone))
+                  label(for='inputPhone') Phone
+                button.btn.btn-lg.btn-google.btn-block.text-uppercase(type='submit', value='register') Submit
+
+                p #{errorusername}
+              if errors 
+                ul
+                  for error in errors
+                    li!= error.msg

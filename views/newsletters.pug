@@ -1,0 +1,22 @@
+extends layout.pug
+
+block content
+    // Main Content
+    header.jumbotron.my-4
+      .container
+        .row
+          .col-lg-8.col-md-10.mx-auto
+            h1.display-3 Op-ed Welcome!
+            p.lead
+              | Newsletters are published quarterly. Submit your articles, opinions, compliments, complaints, etc to the editor.
+            a.btn.btn-primary.btn-lg(href='mailto:hkcbaadm@hkcba.org') Submit now!
+    .container
+      .row
+        .col-lg-8.col-md-10.mx-auto
+          p Newsletters published 
+          ul(style='list-style-type:none;')
+          each nletter in nletter_list
+            li 
+              i.far.fa-file-pdf.fa-2x
+              a.yellowlink(href=nletter.Dname) &nbsp&nbsp#{nletter.Title} 
+              hr

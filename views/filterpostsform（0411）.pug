@@ -1,0 +1,26 @@
+extends layoutfilterposts
+
+block content
+    .container
+      .row
+        .col-lg-8.col-md-10.mx-auto
+          form(action='', method='post')
+
+
+            p select authors:
+            .custom-control.custom-checkbox
+              input#customCheck1.custom-control-input(type='checkbox')
+              label.custom-control-label(for='customCheck1') General news
+            .custom-control.custom-checkbox
+              input#customCheck2.custom-control-input(type='checkbox')
+              label.custom-control-label(for='customCheck2') Tournament news
+
+            br
+            p select posts dated from: 
+            // bootstrap-datepicker
+            // input type="text" class="form-control"
+            input.datepicker(data-date-format='mm/dd/yyyy')
+            br
+            br
+            button.btn.btn-primary(type='submit') Submit
+

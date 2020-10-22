@@ -1,0 +1,27 @@
+extends layout.pug
+
+block content
+    .container
+      .row
+        .col-lg-8.col-md-10.mx-auto
+          p #{playername}
+          p Pre-registration 
+          ul
+          each mrlink in mrlink_list
+            li 
+              a(href=mrlink.url) #{mrlink.Game} 
+              | (#{mrlink.Tdate.toDateString()})
+          p Masterpoints history 
+          table
+            tr
+              th Cat
+              th Points
+              th Event
+              th Date
+            each masterp in masterp_list
+              tr
+                td #{masterp.Category}
+                td #{masterp.Points}
+                td #{masterp.Game}
+                td #{masterp.Tdate.toDateString()}
+            hr

@@ -1,0 +1,20 @@
+extends layoutlogin.pug
+
+block content
+    .container
+      .row
+        .col-sm-9.col-md-7.col-lg-5.mx-auto
+          .card.card-signin.my-5
+            .card-body
+              h5.card-title.text-center Sign In
+              form.form-signin(action='', method='post')
+                .form-label-group
+                  input#inputUsername.form-control(name='inputUsername', type='textbox', placeholder='', required='', autofocus='')
+                  label(for='inputUsername') Username
+                .form-label-group
+                  input#inputPassword.form-control(name='inputPassword', type='password', placeholder='', required='')
+                  label(for='inputPassword') Password
+                p #{flashmessage}  
+                button.btn.btn-lg.btn-primary.btn-block.text-uppercase(type='submit', value='signin') Sign in
+                hr.my-4
+                button.btn.btn-lg.btn-google.btn-block.text-uppercase(type='submit', value='register') Register

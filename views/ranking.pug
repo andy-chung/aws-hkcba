@@ -1,0 +1,177 @@
+extends layout.pug
+
+block content
+    .container
+      .row
+        .col-lg-8.col-md-10.mx-auto
+          p
+            i.fas.fa-trophy.fa-2x
+            |  National grand master
+          .table-responsive
+            table.table
+              tr
+                th  
+                th Player
+                th BP
+                th GP
+                th PP
+              each ngm in ngm_list
+                tr
+                  td #{ngm.Rownum} 
+                  td #{ngm.Mname} 
+                  td #{ngm.Tbp} 
+                  td #{ngm.Tgp} 
+                  td #{ngm.Tpp} 
+            hr
+          p
+            i.fas.fa-trophy.fa-2x
+            |  Grand master
+          .table-responsive
+            table.table
+              tr
+                th
+                th Player
+                th BP
+                th GP
+                th PP
+              each gm in gm_list
+                tr
+                  td #{gm.Rownum} 
+                  td #{gm.Mname} 
+                  td #{gm.Tbp} 
+                  td #{gm.Tgp} 
+                  td #{gm.Tpp} 
+            hr
+          p
+            i.fas.fa-trophy.fa-2x
+            |  National Life master
+          .table-responsive
+            table.table
+              tr
+                th
+                th Player
+                th BP
+                th GP
+                th PP
+              each nlm in nlm_list
+                tr
+                  td #{nlm.Rownum} 
+                  td #{nlm.Mname} 
+                  td #{nlm.Tbp} 
+                  td #{nlm.Tgp} 
+                  td #{nlm.Tpp} 
+            hr
+          p
+            i.fas.fa-trophy.fa-2x
+            |  Life master
+          .table-responsive
+            table.table
+              tr
+                th
+                th Player
+                th BP
+                th GP
+                th PP
+              each lm in lm_list
+                tr
+                  td #{lm.Rownum} 
+                  td #{lm.Mname} 
+                  td #{lm.Tbp} 
+                  td #{lm.Tgp} 
+                  td #{lm.Tpp} 
+            hr
+          p
+            i.fas.fa-trophy.fa-2x
+            |  Gold master
+          .table-responsive
+            table.table
+              tr
+                th
+                th Player
+                th BP
+                th GP
+                th PP
+              each goldm in goldm_list
+                tr
+                  td #{goldm.Rownum} 
+                  td #{goldm.Mname} 
+                  td #{goldm.Tbp} 
+                  td #{goldm.Tgp} 
+                  td #{goldm.Tpp} 
+            hr
+          p
+            i.fas.fa-trophy.fa-2x
+            |  Silver master
+          .table-responsive
+            table.table
+              tr
+                th
+                th Player
+                th BP
+                th GP
+                th PP
+              each sm in sm_list
+                tr
+                  td #{sm.Rownum} 
+                  td #{sm.Mname} 
+                  td #{sm.Tbp} 
+                  td #{sm.Tgp} 
+                  td #{sm.Tpp} 
+            hr
+          p
+            i.fas.fa-trophy.fa-2x
+            |  Bronze master
+          .table-responsive
+            table.table
+              tr
+                th
+                th Player
+                th BP
+                th GP
+                th PP
+              each bm in bm_list
+                tr
+                  td #{bm.Rownum} 
+                  td #{bm.Mname} 
+                  td #{bm.Tbp} 
+                  td #{bm.Tgp} 
+                  td #{bm.Tpp} 
+            hr
+          p
+            i.fas.fa-trophy.fa-2x
+            |  Master
+          .table-responsive
+            table.table
+              tr
+                th
+                th Player
+                th BP
+                th GP
+                th PP
+              each m in m_list
+                tr
+                  td #{m.Rownum} 
+                  td #{m.Mname} 
+                  td #{m.Tbp} 
+                  td #{m.Tgp} 
+                  td #{m.Tpp} 
+            hr
+          p
+            i.fas.fa-trophy.fa-2x
+            |  Non Master
+          .table-responsive
+            table.table
+              tr
+                th
+                th Player
+                th BP
+                th GP
+                th PP
+              each nm in nm_list
+                tr
+                  td #{nm.Rownum} 
+                  td #{nm.Mname} 
+                  td #{nm.Tbp} 
+                  td #{nm.Tgp} 
+                  td #{nm.Tpp} 
+            hr

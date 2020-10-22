@@ -1,0 +1,18 @@
+extends layout.pug
+
+block content
+    .container
+      .row
+        .col-lg-8.col-md-10.mx-auto
+          p Unless otherwise stated games are hosted at clubhouse.  
+          .table-responsive
+            table.table
+              tr
+                th Date
+                th Event
+              each tourney in tourney_list
+                tr
+                  td #{tourney.Tdate.toDateString()} #{tourney.Tdate.toLocaleTimeString()}
+                  td 
+                     a.yellowlink(href=tourney.Link) #{tourney.Game} 
+            hr

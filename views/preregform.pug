@@ -1,0 +1,36 @@
+extends layout.pug
+
+block content
+    .container
+      .row
+        .col-lg-8.col-md-10.mx-auto
+          form(action='', method='post')
+            .form-group.row
+              label.col-sm-2.col-form-label(for='labelGame') Game:
+              .col-sm-10
+                input#labelGame.form-control-plaintext(type='text', readonly='', value=gamename)
+              label.col-sm-2.col-form-label(for='labelDate') Date:
+              .col-sm-10
+                input#labelDate.form-control-plaintext(type='text', readonly='', value=gamedate.toDateString())
+              label.col-sm-2.col-form-label(for='labelPlayer') Player:
+              .col-sm-10
+                input#labelPlayer.form-control-plaintext(type='text', readonly='', value=playername)
+            .form-group
+              label(for='inputDesc') Partner or teammates:
+              input#inputDesc.form-control(type='textbox', name='inputDesc', aria-describedby='descHelp', placeholder='Enter partner or teammates')
+              small#descHelp.form-text.text-muted Only one of your team needs registration.
+            .form-check
+              input#regRadios1.form-check-input(type='radio', name='regRadios', value='optionRegister', checked='')
+              label.form-check-label(for='regRadios1')
+                | Register
+            .form-check
+              input#regRadios2.form-check-input(type='radio', name='regRadios', value='optionWithdraw')
+              label.form-check-label(for='regRadios2')
+                | Withdraw
+            br
+            button.btn.btn-primary(type='submit') Submit
+
+          if errors 
+            ul
+              for error in errors
+                li!= error.msg

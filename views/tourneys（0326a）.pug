@@ -1,0 +1,16 @@
+extends layout.pug
+
+block content
+    .container
+      .row
+        .col-lg-8.col-md-10.mx-auto
+          p List of participants registered 
+          table
+            tr
+              th Player
+              th Teammates
+            each player in player_list
+              tr
+                td #{player.MName} 
+                td #{player.Description}
+            hr
