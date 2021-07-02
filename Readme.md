@@ -1,5 +1,5 @@
 # Non-profit project
-[https://www.testhkcba.us-east-2.elasticbeanstalk.com/](https://www.testhkcba.us-east-2.elasticbeanstalk.com/)
+[https://testhkcba.us-east-2.elasticbeanstalk.com/](https://testhkcba.us-east-2.elasticbeanstalk.com/)
 
 1. Nodejs as runtime
 1. Expressjs as web framework
